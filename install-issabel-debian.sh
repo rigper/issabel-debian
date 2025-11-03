@@ -97,6 +97,7 @@ menuselect/menuselect \
     --disable cel_pgsql \
     --disable-category MENUSELECT_CHANNELS \
     --enable  chan_iax2 \
+	--enable  chan_sip \
     --enable  chan_pjsip \
     --enable  chan_rtp \
     --enable-category MENUSELECT_CODECS \
@@ -544,7 +545,7 @@ TimeoutStartSec=7
 Restart=always
 ExecStart=/usr/bin/docker run --rm --name vosk \
     -p 2700:2700 \
-    issabel/vosk-asr-es:latest
+    alphacep/kaldi-es:latest
 
 ExecStop=/usr/bin/docker stop vosk
 
