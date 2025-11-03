@@ -450,7 +450,7 @@ EOF
 
 # IssabelPBX Installation
 cd /usr/src
-git clone https://github.com/asternic/issabelPBX.git
+git clone https://github.com/IssabelFoundation/issabelPBX.git
 
 # IssabelPbx copy patch 
 /usr/bin/cp -rf $SOURCE_DIR_SCRIPT/issabel/patch/*.patch /usr/src/issabelPBX
